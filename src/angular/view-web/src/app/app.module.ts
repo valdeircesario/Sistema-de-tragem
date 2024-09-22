@@ -14,6 +14,7 @@ import {MessageService} from "primeng/api";
 import {AuthGuard} from "./guard/auth-guard";
 import {CookieService} from "ngx-cookie-service";
 import {TokenInterceptor} from "../shared/filter";
+import { HomeComponent } from './pages-utils/home/home.component';
 
 
 
@@ -22,7 +23,8 @@ import {TokenInterceptor} from "../shared/filter";
 @NgModule({
     declarations: [
         AppComponent,
-        AppLoginComponent
+        AppLoginComponent,
+        HomeComponent
 
     ],
     imports: [
