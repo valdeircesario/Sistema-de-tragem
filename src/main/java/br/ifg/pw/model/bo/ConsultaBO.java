@@ -43,7 +43,6 @@ public class ConsultaBO {
                     entity.setTime(LocalTime.parse(dto.getTime()));
                     entity.setStatus(dto.getStatus());
 
-                    System.out.println("Tentando persistir nova consuta: "+dto);
 
                     this.dao.persist(entity);
                     return Response.status(Response.Status.OK).entity("Consulta atualizada com sucesso.").build();
