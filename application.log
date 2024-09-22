@@ -1,0 +1,66 @@
+2024-09-19 20:15:04 WARN  [Quarkus Main Thread] io.quarkus.config - Unrecognized configuration key "quarkus.http.cors.allow-credentials" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+2024-09-19 20:15:04 WARN  [Quarkus Main Thread] io.quarkus.config - Unrecognized configuration key "quarkus.smallrye-jwt.enable" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+2024-09-19 20:16:56 WARNING [executor-thread-1] class br.ifg.pw.rest.LoginController - danilo@email
+2024-09-19 20:16:56 WARNING [executor-thread-2] class br.ifg.pw.rest.LoginController - danilo@email
+2024-09-19 20:18:23 WARNING [executor-thread-2] class br.ifg.pw.rest.LoginController - danilo@email
+2024-09-19 20:23:05 WARNING [executor-thread-2] class br.ifg.pw.rest.LoginController - danilo@email
+2024-09-19 20:24:17 WARNING [executor-thread-2] class br.ifg.pw.rest.LoginController - danilo@email
+2024-09-19 20:29:45 ERROR [executor-thread-2] io.quarkus.vertx.http.runtime.QuarkusErrorHandler - HTTP Request to /usuario failed, error id: 8d340604-6877-4be1-a348-7ff09a3bef25-1: jakarta.json.bind.JsonbException: Internal error: I/O error while parsing JSON
+	at org.eclipse.yasson.internal.DeserializationContextImpl.deserializeItem(DeserializationContextImpl.java:142)
+	at org.eclipse.yasson.internal.DeserializationContextImpl.deserialize(DeserializationContextImpl.java:127)
+	at org.eclipse.yasson.internal.JsonBinding.deserialize(JsonBinding.java:55)
+	at org.eclipse.yasson.internal.JsonBinding.fromJson(JsonBinding.java:102)
+	at org.jboss.resteasy.reactive.server.jsonb.JsonbMessageBodyReader.doReadFrom(JsonbMessageBodyReader.java:57)
+	at org.jboss.resteasy.reactive.server.jsonb.JsonbMessageBodyReader.readFrom(JsonbMessageBodyReader.java:39)
+	at org.jboss.resteasy.reactive.server.handlers.RequestDeserializeHandler.readFrom(RequestDeserializeHandler.java:126)
+	at org.jboss.resteasy.reactive.server.handlers.RequestDeserializeHandler.handle(RequestDeserializeHandler.java:84)
+	at io.quarkus.resteasy.reactive.server.runtime.QuarkusResteasyReactiveRequestContext.invokeHandler(QuarkusResteasyReactiveRequestContext.java:135)
+	at org.jboss.resteasy.reactive.common.core.AbstractResteasyReactiveContext.run(AbstractResteasyReactiveContext.java:147)
+	at io.quarkus.vertx.core.runtime.VertxCoreRecorder$14.runWith(VertxCoreRecorder.java:599)
+	at org.jboss.threads.EnhancedQueueExecutor$Task.doRunWith(EnhancedQueueExecutor.java:2516)
+	at org.jboss.threads.EnhancedQueueExecutor$Task.run(EnhancedQueueExecutor.java:2495)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1521)
+	at org.jboss.threads.DelegatingRunnable.run(DelegatingRunnable.java:11)
+	at org.jboss.threads.ThreadLocalResettingRunnable.run(ThreadLocalResettingRunnable.java:11)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+	Suppressed: jakarta.json.JsonException: I/O error while closing JSON tokenizer
+		at org.eclipse.parsson.JsonParserImpl.close(JsonParserImpl.java:375)
+		at org.eclipse.yasson.internal.JsonBinding.fromJson(JsonBinding.java:101)
+		... 14 more
+	Caused by: java.io.IOException: java.nio.channels.ClosedChannelException
+		at org.jboss.resteasy.reactive.server.vertx.VertxInputStream$VertxBlockingInput.readBlocking(VertxInputStream.java:256)
+		at org.jboss.resteasy.reactive.server.vertx.VertxInputStream.readIntoBuffer(VertxInputStream.java:123)
+		at org.jboss.resteasy.reactive.server.vertx.VertxInputStream.close(VertxInputStream.java:151)
+		at java.base/sun.nio.cs.StreamDecoder.implClose(StreamDecoder.java:377)
+		at java.base/sun.nio.cs.StreamDecoder.close(StreamDecoder.java:205)
+		at java.base/java.io.InputStreamReader.close(InputStreamReader.java:192)
+		at org.eclipse.parsson.JsonTokenizer.close(JsonTokenizer.java:584)
+		at org.eclipse.parsson.JsonParserImpl.close(JsonParserImpl.java:372)
+		... 15 more
+	Caused by: java.nio.channels.ClosedChannelException
+		at org.jboss.resteasy.reactive.server.vertx.VertxInputStream$VertxBlockingInput.<init>(VertxInputStream.java:184)
+		at org.jboss.resteasy.reactive.server.vertx.VertxInputStream.<init>(VertxInputStream.java:39)
+		at org.jboss.resteasy.reactive.server.vertx.VertxResteasyReactiveRequestContext.createInputStream(VertxResteasyReactiveRequestContext.java:249)
+		at org.jboss.resteasy.reactive.server.core.ResteasyReactiveRequestContext.getInputStream(ResteasyReactiveRequestContext.java:731)
+		... 13 more
+Caused by: jakarta.json.JsonException: I/O error while parsing JSON
+	at org.eclipse.parsson.JsonTokenizer.read(JsonTokenizer.java:467)
+	at org.eclipse.parsson.JsonTokenizer.nextToken(JsonTokenizer.java:334)
+	at org.eclipse.parsson.JsonParserImpl$NoneContext.getNextEvent(JsonParserImpl.java:443)
+	at org.eclipse.parsson.JsonParserImpl.next(JsonParserImpl.java:360)
+	at org.eclipse.yasson.internal.DeserializationContextImpl.deserializeItem(DeserializationContextImpl.java:134)
+	... 17 more
+Caused by: java.io.IOException: java.nio.channels.ClosedChannelException
+	at org.jboss.resteasy.reactive.server.vertx.VertxInputStream$VertxBlockingInput.readBlocking(VertxInputStream.java:256)
+	at org.jboss.resteasy.reactive.server.vertx.VertxInputStream.readIntoBuffer(VertxInputStream.java:123)
+	at org.jboss.resteasy.reactive.server.vertx.VertxInputStream.read(VertxInputStream.java:85)
+	at java.base/sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:281)
+	at java.base/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:324)
+	at java.base/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:189)
+	at java.base/java.io.InputStreamReader.read(InputStreamReader.java:177)
+	at org.eclipse.parsson.JsonTokenizer.fillBuf(JsonTokenizer.java:496)
+	at org.eclipse.parsson.JsonTokenizer.read(JsonTokenizer.java:457)
+	... 21 more
+Caused by: [CIRCULAR REFERENCE: java.nio.channels.ClosedChannelException]
+

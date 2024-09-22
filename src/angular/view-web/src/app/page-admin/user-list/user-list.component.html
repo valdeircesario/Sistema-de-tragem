@@ -1,0 +1,113 @@
+
+<div class="teste-tolbar">
+  <p-toolbar>
+    <ng-template pTemplate="left">
+      <button pButton pRipple label="New" icon="pi pi-plus" class="p-button-success mr-2" (click)="openNew()"></button>
+    </ng-template>
+  </p-toolbar>
+
+  <p-table
+    #dt
+    [value]="usuarios"
+    [rows]="10"
+    [paginator]="true"
+    [globalFilterFields]="['name', 'country.name', 'representative.name', 'status']"
+    [tableStyle]="{ 'min-width': '75rem' }"
+    [rowHover]="true"
+    dataKey="id"
+    currentPageReportTemplate="Showing {first} to {last} of {totalRecords} registros"
+    [showCurrentPageReport]="true"
+  >
+    <ng-template pTemplate="caption">
+      <div class="flex align-items-center justify-content-between">
+        <h5 class="m-0">LISTA DE USUÁRIO</h5>
+      </div>
+    </ng-template>
+    <ng-template pTemplate="header">
+      <tr>
+        <th style="min-width:15rem">EMAIL</th>
+        <th style="min-width:15rem">NOME COMPLETO</th>
+        <th style="min-width:15rem">PERFIL</th>
+        <th style="min-width:15rem">TELEFONE</th>
+        <th></th>
+      </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-usuario>
+      <tr>
+        <td>{{ usuario.email }}</td>
+        <td>{{ usuario.nomeCompleto }}</td>
+        <td>{{ usuario.perfil }}</td>
+        <td>{{ usuario.telefone}}</td>
+        <td>
+          <button pButton pRipple icon="pi pi-pencil" class="p-button-rounded p-button-success mr-2" (click)="editProduct(usuario)"></button>
+          <button pButton pRipple icon="pi pi-trash" class="p-button-rounded p-button-warning" (click)="deleteProduct(usuario)"></button>
+        </td>
+      </tr>
+    </ng-template>
+  </p-table>
+</div>
+
+<p-dialog [(visible)]="productDialog" [style]="{ width: '450px' }" [header]="usuario?.id ? 'Editar usuário' : 'Cadastrar usuário'" [modal]="true" styleClass="p-fluid">
+  <ng-template pTemplate="content">
+
+
+    <div class="field">
+      <label for="email">Email</label>
+      <input type="text" pInputText id="email" [(ngModel)]="usuario.email" required autofocus />
+      <small class="p-error" *ngIf="!usuario.email">Email é obrigatório.</small>
+
+    </div>
+
+    <br>
+
+    <div class="field">
+      <label for="nomeCompleto">Nome Completo</label>
+      <input type="text" pInputText id="nomeCompleto" [(ngModel)]="usuario.nomeCompleto" required autofocus />
+      <small class="p-error" *ngIf="!usuario.nomeCompleto">Nome é obrigatório.</small>
+    </div>
+
+    <br>
+
+    <div class="field">
+      <label for="telefone">Perfil</label>
+      <div class="card flex justify-content-center">
+        <p-dropdown [options]="cities" [(ngModel)]="usuario.perfil" optionValue="name"  optionLabel="name"></p-dropdown>
+      </div>
+
+    </div>
+
+    <br>
+
+    <div class="field">
+      <label for="telefone">Telefone</label>
+      <input type="text" pInputText id="telefone" [(ngModel)]="usuario.telefone" required autofocus />
+    </div>
+
+    <!-- VAI SER UM DROPDOWN COM OS PERFIL ADM OU CONVENCINAL-->
+    <br>
+
+    <div *ngIf="!usuario.id" class="field">
+      <label for="nomeCompleto">Senha</label>
+      <p-password [(ngModel)]="usuario.senha" id="senha"  [toggleMask]="true" required autofocus/>
+<!--      <input type="text" pInputText id="senha" [(ngModel)]="usuario.senha" required autofocus />-->
+      <small class="p-error" *ngIf="!usuario.senha">Senha é obrigatório.</small>
+    </div>
+
+<!--    <div *ngIf="!usuario.id" class="field">-->
+<!--      <label for="nomeCompleto">Senha</label>-->
+<!--      <input type="text" pInputText id="confirmarSenha" [(ngModel)]="usuario.confirmarSenha" required autofocus />-->
+<!--      <small class="p-error" *ngIf="submitted && !usuario.senha">Name is required.</small>-->
+<!--    </div>-->
+
+
+  </ng-template>
+
+  <ng-template pTemplate="footer">
+    <p-button label="Cancelar" severity="secondary" (click)="hideDialog()"></p-button>
+    <p-button label="Salvar" [disabled]="!isValidForm()" severity="primary" (click)="saveProduct(usuario)"></p-button>
+  </ng-template>
+</p-dialog>
+
+<p-confirmDialog [style]="{ width: '450px' }"></p-confirmDialog>
+
+<p-toast></p-toast>

@@ -1,0 +1,62 @@
+<div class="campo">
+  <p><strong>Preencha os campos abaixo</strong></p>
+</div>
+<form #formuTriagem="ngForm"(ngSubmit)="onSubmit(formuTriagem)" class="formu" >
+  <fieldset class="grupo">
+    <div class="campo">
+      <label for="especialidades"><strong>Qual Especialidade?</strong></label>
+      <select id="especialidades" name="especialidade" [(ngModel)]="especialidade" required>
+        <option selected disabled value="">Selecione...</option>
+        <option value="Cardiologista">Cardiologista</option>
+        <option value="Ortopedista">Ortopedista</option>
+        <option value="Clinico Geral">Clínico Geral</option>
+        <option value="Outros">Outros</option>
+      </select>
+    </div>
+    <hr>
+    <div class="campo">
+      <label id="hipertenso"><strong>Você é hipertenso?</strong></label>
+      <input type="radio" name="hipertensao" value="sim" [(ngModel)]="hipertensao">Sim
+      <input type="radio" name="hipertensao" value="nao" [(ngModel)]="hipertensao" checked>Não
+    </div>
+    <hr>
+    <div class="campo">
+      <label id="diabetico"><strong>Você é diabético?</strong></label>
+      <input type="radio" name="diabetico" value="sim" [(ngModel)]="diabetico">Sim
+      <input type="radio" name="diabetico" value="nao" [(ngModel)]="diabetico" checked>Não
+    </div>
+    <hr>
+    <div class="campo">
+      <label id="febre"><strong>Você tem febre?</strong></label>
+      <input type="radio" name="febre" value="sim" [(ngModel)]="febre">Sim
+      <input type="radio" name="febre" value="nao" [(ngModel)]="febre" checked>Não
+    </div>
+    <hr>
+    <div class="campo">
+      <label id="dor"><strong>Você está com dor?</strong></label>
+      <div class="campo">
+        <input type="radio" name="dor" value="sim" [(ngModel)]="dor" (change)="toggleIntensidadeDisplay()">Sim
+        <input type="radio" name="dor" value="nao" [(ngModel)]="dor" (change)="toggleIntensidadeDisplay()">Não
+      </div>
+    </div>
+    <hr>
+    <div class="campo" *ngIf="dor === 'sim'">
+      <label for="intensidade"><strong>Intensidade da Dor:</strong></label>
+      <select id="intensidade" name="intensidade"[(ngModel)]="intensidade">
+        <option value="fraca">Fraca</option>
+        <option value="media">Média</option>
+        <option value="intensa">Intensa</option>
+      </select>
+    </div>
+    <hr>
+    <div class="campo">
+      <label for="peso"><strong>Qual seu peso?</strong></label>
+      <input type="text" id="peso" name="peso" [(ngModel)]="peso" required>
+    </div>
+    <hr>
+    <button [disabled]="formuTriagem.invalid" class="botao" type="submit">Enviar</button>
+  </fieldset>
+</form>
+
+
+<p-toast></p-toast>

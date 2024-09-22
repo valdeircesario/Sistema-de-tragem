@@ -1,0 +1,43 @@
+<div class="info">
+    <div class="icone">
+        <img src="https://th.bing.com/th/id/OIP.7riGQ6HNYD3iYJl-CDGJ3wHaF7?pid=ImgDet&w=174&h=104.39999999999999&c=7&dpr=1,3" alt="Icone">
+    </div>
+    <div class="text">
+        <h2>Consultar agendamentos dos pacientes</h2>
+        <p>Para verificar todos os dados, clique no botão ao lado</p>
+    </div>
+    <div class="clik">
+        <a href="#" (click)="openModal($event)">Listar Agendamentos</a>
+    </div>
+</div>
+
+<div id="myModal" class="modal" #myModal (click)="onWindowClick($event)">
+    <div class="modal-content">
+        <button class="close-btn" (click)="closeModal()">Fechar</button>
+        <h2>Lista de Consultas</h2>
+        <table>
+            <thead>
+            <tr id="listar_triagem">
+                <th id="IDS">Id</th>
+                <th id="IDp">id_paciente</th>
+                <th id="EspecialidadeS">Especialidade</th>
+                <th id="resultado">Local</th>
+                <th id="dat">Data</th>
+                <th id="hora">Horario</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let item of Agenda">
+                <td id="id">{{ item.id }}</td>
+                <td id="id_paciente">{{item.paciente}}</td>
+              <td id="especialidade">{{item.especialidade}}</td>
+                <td id="local">{{item.local}}</td>
+                <td id="data">{{item.date}}</td>
+                <td id="time">{{item.time}}</td>
+
+
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

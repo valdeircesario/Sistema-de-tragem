@@ -1,0 +1,163 @@
+body {
+  font-family: 'Patua One', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('https://th.bing.com/th/id/OIP.a0B_0w5-JpCw8UgDzeIhKgHaHa?pid=ImgDet&w=173&h=115.12956419316843&c=7&dpr=1,3');
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+header {
+  padding: 20px;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  opacity: 0.5;
+}
+
+header h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #170202;
+  margin: 0 0 10px 0;
+}
+.cadastro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  //opacity: 0.5;
+  padding: 20px;
+  box-shadow: 10px 10px 10px 10px rgba(1, 0, 0, 0.3);
+  width: 90%;
+  max-width: 500px;
+  margin: 10px auto 0;
+  border: 6px double #444343;
+  flex-grow: 1;
+  margin-bottom:60px;
+}
+
+
+
+
+.cadastro h2 {
+  font-family: 'Patua One', sans-serif;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 1.8rem;
+  color: #0e0c0c;
+}
+
+.form-group {
+  display: flex;
+  gap: 12px;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.form-group1 {
+  font-family: 'Patua One', sans-serif;
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"],
+input[type="tel"],
+input[type="date"] {
+  padding: 15px;
+  width: 90%;
+  border: 2px solid #444343;
+  border-radius: 20px;
+}
+
+button {
+  font-family: 'Patua One', sans-serif;
+  padding: 10px;
+  background-color: #bbd7f5;
+  color: #170202;
+  border: 5px double #444343;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  width: 100%;
+  max-width: 200px;
+  margin-top: 15px;
+}
+
+button:hover {
+  background-color: #192a3d;
+  border: 5px double #f8f6f6;
+  color:white;
+
+}
+
+.instrucoes {
+  font-family: 'Patua One', sans-serif;
+  color: #575454;
+  margin-left: 22px;
+}
+
+
+footer {
+  font-family: 'Patua One', sans-serif;
+  margin-top: 80px;
+  background: #6e6c6c;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+  border-top: 5px double #eccbcb;
+  width: 100%;
+  margin-bottom: 0;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.2rem;
+  }
+
+  .cadastro {
+    width: 70%;
+    padding: 20px;
+    margin-top: 80px;
+  }
+
+  .formcadastro h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+
+  .form-group1 {
+    display:flex;
+    gap: 10px;
+  }
+
+  input[type="email"],
+  input[type="password"],
+  input[type="text"],
+  input[type="phone"],
+  input[type="date"] {
+    padding: 10px;
+  }
+
+  button {
+    padding: 8px;
+    font-size: 0.7rem;
+    width: 50%;
+  }
+}
