@@ -1,52 +1,46 @@
-# AppComparaTudo
+# Sistema de Triagem de Pacientes
 
-## Introdução
+**Junho de 2024 - até o momento**
 
-O AppComparaTudo é um aplicativo Java que auxilia os usuários a tomar decisões mais informadas ao comparar produtos ou serviços. Utilizando um algoritmo de comparação baseado em critérios personalizados, o aplicativo calcula uma pontuação para cada item e apresenta os resultados de forma clara e concisa.
+**Associado(s) ao Instituto Federal de Goiás (IFG)**
 
-## Funcionalidades
+Este sistema web foi desenvolvido para otimizar o agendamento de consultas em unidades de saúde. Ao preencher um formulário simples, os pacientes são classificados por prioridade, garantindo que os casos mais urgentes sejam atendidos rapidamente.
 
-* **Comparação personalizada:** Permite definir os critérios de comparação e atribuir pesos a cada um deles.
-* **Banco de dados:** Utiliza o PostgreSQL para armazenar os dados dos produtos e as comparações realizadas.
-* **Interface gráfica:** Possui uma interface intuitiva e fácil de usar, desenvolvida com Swing.
-* **Resultados visualizados:** Apresenta os resultados da comparação de forma clara e organizada.
+## Principais Funcionalidades
+
+- **Cadastro de Pacientes:** Criação de perfis e histórico de atendimento.
+- **Classificação por Prioridade:** Algoritmo inteligente para definir a ordem de atendimento.
+- **Agendamento Automático:** Criação de agendas personalizadas para cada médico.
+- **Notificações:** Lembretes de consultas para pacientes e profissionais.
 
 ## Tecnologias Utilizadas
 
-* **Java:** Linguagem de programação principal.
-* **Swing:** Framework para criação de interfaces gráficas.
-* **PostgreSQL:** Banco de dados relacional.
-* **IntelliJ IDEA:** Ambiente de desenvolvimento integrado.
+- Angular
+- Quarkus
+- Java
+- PostgreSQL
+- Docker
 
-## Algoritmo de Comparação
+## Resultados
 
-[Diagrama de fluxo do algoritmo]
+- Redução significativa do tempo de espera para atendimento.
+- Aumento da satisfação dos pacientes.
+- Otimização da gestão de agendas médicas.
 
-O algoritmo de comparação funciona da seguinte forma:
+## Habilidades Desenvolvidas
 
-1. **Coleta de dados:** O usuário informa os critérios de comparação e atribui pesos a cada um deles.
-2. **Consulta ao banco de dados:** Os dados dos produtos a serem comparados são buscados no banco de dados.
-3. **Cálculo da pontuação:** Para cada produto, é calculada uma pontuação ponderada com base nos critérios e pesos definidos pelo usuário.
-4. **Ordenação dos resultados:** Os produtos são ordenados de acordo com suas pontuações, do mais alto para o mais baixo.
-5. **Apresentação dos resultados:** Os resultados são apresentados ao usuário em uma tabela ou gráfico.
+- Desenvolvimento full-stack
+- Design de interfaces
+- Banco de dados relacional
+- Docker e práticas de DevOps
 
-## Instalação e Execução
+## Competências
 
-[... instruções detalhadas de instalação e execução ...]
-
-## Contribuições
-
-Contribuições são bem-vindas! Para contribuir com o projeto, siga estes passos:
-
-1. Fork este repositório.
-2. Crie um novo branch para sua feature.
-3. Faça suas alterações e commit.
-4. Envie um pull request.
-
-## Licença
-
-Este projeto está licenciado sob a licença MIT.
-
-## Contato
-
-Para entrar em contato comigo, envie um email para [seu email].
+- AngularJS
+- Quarkus
+- Node.js
+- Docker
+- PostgreSQL
+- IntelliJ IDEA
+- HTML5
+- CSS
