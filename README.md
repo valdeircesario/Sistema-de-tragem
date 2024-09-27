@@ -28,6 +28,38 @@ Este sistema web foi desenvolvido para otimizar o agendamento de consultas em un
 - Aumento da satisfação dos pacientes.
 - Otimização da gestão de agendas médicas.
 
+  ## Demonstração
+
+Veja abaixo algumas capturas de tela do site Azalleia:
+
+<div style="display: flex; align-items: center;justify-content: center;">
+    <div style="margin-bottom: 20px;">
+        <img src="https://github.com/user-attachments/assets/97313dbc-0f36-4588-b57b-d072c704ad64" alt="Página Inicial" width="800" height="400" >
+        <p><em>Figura 1: Pagina inicial.</em></p>
+    </div>
+    <div style="margin-bottom: 20px;">
+        <img src="https://github.com/user-attachments/assets/898f4d31-4a5d-4b8a-952e-7296052a5d1b" alt="tela inicial" width="800"height="400" >
+        <p><em>Figura 2:Página de Cadastro. .</em></p>
+    </div>
+    <div style="margin-bottom: 20px;">
+        <img src="https://github.com/user-attachments/assets/8aef9721-7925-453e-961d-f5ffcce08a94 " alt="Seção de Projetos" width="800" height="400" >
+        <p><em>Figura 3: Login.</em></p>
+    </div>
+    <div style="margin-bottom: 20px;">
+        <img src="https://github.com/user-attachments/assets/ad918d83-10c9-4281-ba88-67a69deefa03" alt="Seção de Contatos" width="800" height="400" >
+        <p><em>Figura 4: Pagina Usuario.</em></p>
+    </div>
+  <div style="margin-bottom: 20px;">
+        <img src="https://github.com/user-attachments/assets/a6f33fb0-281e-42a9-8765-9c6bd7583a0c" alt="Seção de Contatos" width="800" height="400" >
+        <p><em>Figura 5: Pagina  Administrador</em></p>
+    </div>
+  <div style="margin-bottom: 20px;">
+        <img src="https://github.com/user-attachments/assets/fbc99dd2-781d-43c7-86fd-f1d06dbe3215" alt="Seção de Contatos" width="800" height="400" >
+        <p><em>Figura 6: Pagina Admin .</em></p>
+    </div>
+
+</div>
+
 ## Habilidades Desenvolvidas
 
 - Desenvolvimento full-stack
@@ -35,17 +67,24 @@ Este sistema web foi desenvolvido para otimizar o agendamento de consultas em un
 - Banco de dados relacional
 - Docker e práticas de DevOps
 
-## Competências
+## Tecnologias Utilizadas
 
-- AngularJS
-- Quarkus
-- Node.js
-- Docker
-- PostgreSQL
-- IntelliJ IDEA
-- HTML5
-- CSS
-=======
+O projeto foi desenvolvido com as seguintes tecnologias:
+<div style="display: inline_block"><br>
+  <img align="center" alt="HTML" height="50" width="60" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
+  <img align="center" alt="CSS" height="50" width="60" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
+  <img align="center" alt="VSCode" height="50" width="60" src="https://github.com/user-attachments/assets/2b972bec-3195-411f-9603-393c1c75281f">
+ <img align="center" alt="Node.js" height="50" width="60" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg">
+<img align="center" alt="Angular" height="50" width="60" src="https://github.com/user-attachments/assets/c8d76408-9eef-41fe-8511-b590d4920c63">
+  
+</div>
+
+- **HTML:** Estrutura do site.
+- **CSS:** Estilização visual.
+- **Bootstrap:** Framework usado para garantir a responsividade.
+- **VSCode:** Editor de código utilizado durante o desenvolvimento.
+- **React:** Biblioteca moderna para construção de interfaces.
+- **Node.js:** Ambiente de execução para JavaScript no servidor, permitindo a construção de aplicações web escaláveis e eficientes.
 # software-triagem
 
 This project uses Quarkus, the Supersonic Subatomic Java Framework.
