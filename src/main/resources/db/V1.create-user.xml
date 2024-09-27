@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.6.xsd">
+
+
+    <changeSet id="V1.0.crete-table-tbusuario"
+               author="daniloGabriel">
+        <createTable tableName="tbusuario">
+            <column name="id"
+                    type="BIGINT">
+                <constraints nullable="false"
+                             primaryKey="true"
+                             primaryKeyName="pk_tbusuario"/>
+            </column>
+            <column name="nome_completo"
+                    type="varchar(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="email"
+                    type="varchar(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="senha"
+                    type="varchar(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="telefone"
+                    type="varchar(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="data_nascimento"
+                    type="DATETIME"/>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="V1.1.add_usuario_root" author="daniloGabriel">
+        <preConditions  onFail="WARN">
+            <not>
+                <tableExists tableName="tbusuario" />
+            </not>
+        </preConditions>
+        <insert tableName="tbusuario">
+            <column name="nome_login" value="root"/>
+            <column name="senha" value="$2a$12$gCUHEKn5rx4NYXcMoB/J1ObLBYDerKe1JpFse1QFkTQlWtYR0tzPK"/>
+            <column name="nome_completo" value="admin-triagem"/>
+            <column name="ativo" value="true"/>
+        </insert>
+    </changeSet>
+
+</databaseChangeLog>

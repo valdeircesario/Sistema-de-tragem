@@ -1,0 +1,41 @@
+
+<header class="heder">
+  <h1>Bem-vindo ao Sistema de Triagem</h1>
+</header>
+<div class="container">
+  <aside class="sidebar">
+    <div class="user-info">
+
+      <h2>Bem-vindo</h2>
+
+      <h4>Voce e um Adminitrador</h4>
+
+
+      <nav class="nav-links">
+        <div class="control">
+          <button (click)="navigateTo('admin/usuario')">Usuário</button>
+          <button (click)="navigateTo('admin/add-consulta')">Marcar Consulta</button>
+          <button (click)="navigateTo('admin/list-triagem')">Triagem</button>
+          <button (click)="navigateTo('admin/list-consulta')">Agendamentos</button>
+<!--          <button (click)="sidebar()">Alterar Senha</button>-->
+          <button (click)="logout()">Sair</button>
+        </div>
+      </nav>
+    </div>
+  </aside>
+  <main class="content">
+
+    <router-outlet></router-outlet>
+
+  </main>
+</div>
+<footer>
+  <p>APP Triagem</p>
+</footer>
+
+<p-dialog [(visible)]="dialog" [style]="{ width: '450px' }" header="Trocar Senha" [modal]="true" styleClass="p-fluid">
+
+</p-dialog>
+
+
+<p-toast></p-toast>

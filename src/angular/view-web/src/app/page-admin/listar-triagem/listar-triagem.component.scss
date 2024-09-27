@@ -1,0 +1,180 @@
+.info {
+  background-color: #fcfcff;
+  border: 3px double #231212;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  color: #2d2525;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.icone img {
+  width: 100px;
+  height: 100px;
+  border-radius: 20%;
+  margin-bottom: 10px;
+}
+
+.text {
+  flex-grow: 1;
+}
+
+.clik a {
+  margin: 0;
+  background-color: #0097A7;
+  border-bottom: 5px double #A3D9A5;
+  color: #f5f2f2;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 9px 15px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.clik a:hover {
+  border: 3px double white;
+  background-color: #3A506B;
+  color: white;
+}
+
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #ece9e9;
+  margin: 5% auto;
+  padding: 20px;
+  border: 3px double #888;
+  width: 80%;
+  max-width: 80%;
+  height: auto;
+  max-height: 90%;
+  overflow-y: auto;
+}
+
+.modal-content h2 {
+  text-align: center;
+  margin-top: 0;
+  font-size: 1.1rem;
+}
+
+.modal-content table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.modal-content table,
+th,
+td {
+  border: 1px solid #918e8e;
+}
+
+.modal-content th,
+td {
+  padding: 7px;
+  text-align: center;
+}
+
+.close-btn {
+  background-color: #504444;
+  color: white;
+  padding: 10px 15px;
+  border: 3px double #f3f0f0;
+  border-radius: 8px;
+  cursor: pointer;
+  float: right;
+  font-size: 1rem;
+}
+
+.close-btn:hover {
+  background-color: #8aadf3;
+}
+
+
+@media (max-width: 1024px) {
+  .info {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .icone img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .text h2 {
+    font-size: 1.2rem;
+  }
+
+  .text p {
+    font-size: 0.9rem;
+  }
+
+  .clik a {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .info {
+    padding: 5px;
+  }
+
+  .icone img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .text h2 {
+    font-size: 1rem;
+  }
+
+  .text p {
+    font-size: 0.8rem;
+  }
+
+  .clik a {
+    padding: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .info {
+    width: 100%;
+  }
+
+  .icone img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .text h2 {
+    font-size: 0.9rem;
+  }
+
+  .text p {
+    font-size: 0.7rem;
+  }
+
+  .clik a {
+    font-size: 12px;
+  }
+}

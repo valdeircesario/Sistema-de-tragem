@@ -1,0 +1,36 @@
+<header class="heder">
+  <h1>Bem-vindo ao Sistema de Triagem</h1>
+</header>
+<div class="container">
+  <aside class="sidebar">
+    <div class="user-info">
+      <h2>Bem-vindo</h2>
+      <h4>Voce e um Usuario</h4>
+
+
+      <nav class="nav-links">
+        <div class="control">
+          <button (click)="navigateTo('users/triagem')">Triagem</button>
+          <button (click)="navigateTo('users/agenda')">Agenda</button>
+<!--          <button (click)="navigateTo('users/consultaTriagem')">Consultar Triagem</button>-->
+<!--          <button (click)="sidebar()">Alterar Senha</button>-->
+          <button (click)="logout()">Sair</button>
+        </div>
+      </nav>
+    </div>
+  </aside>
+  <main class="content">
+
+    <router-outlet></router-outlet>
+
+  </main>
+</div>
+<footer>
+  <p>APP Triagem</p>
+</footer>
+
+<p-dialog [(visible)]="dialog" [style]="{ width: '450px' }" header="Trocar Senha" [modal]="true" styleClass="p-fluid">
+
+  <h1>ALTERAR SENHA AQUI </h1>
+</p-dialog>
+<p-toast></p-toast>

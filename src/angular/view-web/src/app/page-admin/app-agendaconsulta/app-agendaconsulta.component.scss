@@ -1,0 +1,165 @@
+
+
+/* Estilos do header */
+header {
+  background: #6e6c6c;
+  color: #fff;
+  border-bottom: 5px double #eccbcb;
+  padding: 20px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  z-index: 1000;
+
+}
+
+header h1 {
+  margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+.login-container {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  max-width: 800px;
+  margin: 0 auto;
+
+
+
+}
+
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+.login-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+.form-group a {
+  display: inline-block;
+  margin-right: 40px;
+}
+
+
+label {
+  font-weight: bold;
+}
+
+
+input[type="text"]{
+  padding: 9px;
+  width: 100%;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+input[type="time"]{
+  padding:8px;
+  width:30%;
+  border:2px solid #ccc;
+  border-radius:4px;
+}
+
+input[type="date"]{
+  padding:8px;
+  width:30%;
+  border:2px solid #ccc;
+  border-radius:4px;
+}
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+.form-group select {
+  width: 40%;
+  padding: 8px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-group select option {
+  font-size: 16px;
+  padding: 8px;
+}
+
+
+
+
+footer{
+  margin-top:20px;
+  background: #6e6c6c;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+  border-top: 5px double #eccbcb;
+  width: 100%;
+  margin-bottom: 0;
+}
+
+button {
+  margin: 0.6rem 5px;
+  background-color: #0097A7;
+  border-bottom: 5px double #A3D9A5;
+  color: #f5f2f2;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+
+  padding: 13px;
+  width:100%;
+}
+
+button:hover{
+  border: 3px double white;
+  background-color: #3A506B;;
+  color:white;
+}
+
+
+a {
+
+  text-decoration: none;
+  color: #5ca6f1;
+}
+
+a:hover {
+  text-decoration:none;
+  color: #050b6e;
+}
+.instrucoes {
+  font-size: 14px;
+  color: #999;
+  margin-top: 5px;
+}
+
+#senha-instrucoes {
+  display: block;
+}
+
+#senha-igual-span {
+  display: block;
+  color: red;
+}
