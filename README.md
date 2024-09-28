@@ -30,31 +30,31 @@ Este sistema web foi desenvolvido para otimizar o agendamento de consultas em un
 
   ## Demonstração
 
-Veja abaixo algumas capturas de tela do site Azalleia:
+Veja abaixo algumas capturas de tela do Sistema de Triagem:
 
 <div style="display: flex; align-items: center;justify-content: center;">
     <div style="margin-bottom: 20px;">
-        <img src="https://github.com/user-attachments/assets/97313dbc-0f36-4588-b57b-d072c704ad64" alt="Página Inicial" width="800" height="400" >
+        <img src="https://github.com/user-attachments/assets/97313dbc-0f36-4588-b57b-d072c704ad64" alt="Página Inicial" width="1000" height="400" >
         <p><em>Figura 1: Pagina inicial.</em></p>
     </div>
     <div style="margin-bottom: 20px;">
-        <img src="https://github.com/user-attachments/assets/898f4d31-4a5d-4b8a-952e-7296052a5d1b" alt="tela inicial" width="800"height="400" >
+        <img src="https://github.com/user-attachments/assets/898f4d31-4a5d-4b8a-952e-7296052a5d1b" alt="tela inicial" width="1000"height="400" >
         <p><em>Figura 2:Página de Cadastro. .</em></p>
     </div>
     <div style="margin-bottom: 20px;">
-        <img src="https://github.com/user-attachments/assets/8aef9721-7925-453e-961d-f5ffcce08a94 " alt="Seção de Projetos" width="800" height="400" >
+        <img src="https://github.com/user-attachments/assets/8aef9721-7925-453e-961d-f5ffcce08a94 " alt="Seção de Projetos" width="1000" height="400" >
         <p><em>Figura 3: Login.</em></p>
     </div>
     <div style="margin-bottom: 20px;">
-        <img src="https://github.com/user-attachments/assets/ad918d83-10c9-4281-ba88-67a69deefa03" alt="Seção de Contatos" width="800" height="400" >
+        <img src="https://github.com/user-attachments/assets/ad918d83-10c9-4281-ba88-67a69deefa03" alt="Seção de Contatos" width="1000" height="400" >
         <p><em>Figura 4: Pagina Usuario.</em></p>
     </div>
   <div style="margin-bottom: 20px;">
-        <img src="https://github.com/user-attachments/assets/a6f33fb0-281e-42a9-8765-9c6bd7583a0c" alt="Seção de Contatos" width="800" height="400" >
+        <img src="https://github.com/user-attachments/assets/a6f33fb0-281e-42a9-8765-9c6bd7583a0c" alt="Seção de Contatos" width="1000" height="400" >
         <p><em>Figura 5: Pagina  Administrador</em></p>
     </div>
   <div style="margin-bottom: 20px;">
-        <img src="https://github.com/user-attachments/assets/fbc99dd2-781d-43c7-86fd-f1d06dbe3215" alt="Seção de Contatos" width="800" height="400" >
+        <img src="https://github.com/user-attachments/assets/fbc99dd2-781d-43c7-86fd-f1d06dbe3215" alt="Seção de Contatos" width="1000" height="400" >
         <p><em>Figura 6: Pagina Admin .</em></p>
     </div>
 
