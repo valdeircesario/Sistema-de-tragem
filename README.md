@@ -73,18 +73,19 @@ O projeto foi desenvolvido com as seguintes tecnologias:
 <div style="display: inline_block"><br>
   <img align="center" alt="HTML" height="50" width="60" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
   <img align="center" alt="CSS" height="50" width="60" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
-  <img align="center" alt="VSCode" height="50" width="60" src="https://github.com/user-attachments/assets/2b972bec-3195-411f-9603-393c1c75281f">
+  <img align="center" alt="Angular" height="50" width="60" src="https://github.com/user-attachments/assets/2b972bec-3195-411f-9603-393c1c75281f">
  <img align="center" alt="Node.js" height="50" width="60" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg">
-<img align="center" alt="Angular" height="50" width="60" src="https://github.com/user-attachments/assets/c8d76408-9eef-41fe-8511-b590d4920c63">
+<img align="center" alt="intellij idea" height="50" width="60" src="https://github.com/user-attachments/assets/c8d76408-9eef-41fe-8511-b590d4920c63">
+<img align="center" alt="Quarkus" height="50" width="60" src="https://github.com/user-attachments/assets/bb3d760c-6dfe-4d56-94fe-cd5f0786df38">
   
 </div>
 
 - **HTML:** Estrutura do site.
-- **CSS:** Estilização visual.
-- **Bootstrap:** Framework usado para garantir a responsividade.
-- **VSCode:** Editor de código utilizado durante o desenvolvimento.
-- **React:** Biblioteca moderna para construção de interfaces.
+- **CSS:** Estilização visual e Responsividade.
+- **intellij idea:** Editor de código utilizado durante o desenvolvimento.
+- **Angular:** Biblioteca moderna para construção de interfaces.
 - **Node.js:** Ambiente de execução para JavaScript no servidor, permitindo a construção de aplicações web escaláveis e eficientes.
+-  **Quarkus:** um framework Java nativo do Kubernetes de stack completo que foi desenvolvido para máquinas virtuais Java (JVMs) e compilação nativa. 
 # software-triagem
 
 This project uses Quarkus, the Supersonic Subatomic Java Framework.
