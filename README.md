@@ -71,12 +71,17 @@ Veja abaixo algumas capturas de tela do Sistema de Triagem:
 
 O projeto foi desenvolvido com as seguintes tecnologias:
 <div style="display: inline_block"><br>
-  <img align="center" alt="HTML" height="50" width="60" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
-  <img align="center" alt="CSS" height="50" width="60" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
-  <img align="center" alt="Angular" height="50" width="60" src="https://github.com/user-attachments/assets/2b972bec-3195-411f-9603-393c1c75281f">
- <img align="center" alt="Node.js" height="50" width="60" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg">
-<img align="center" alt="intellij idea" height="50" width="60" src="https://github.com/user-attachments/assets/c8d76408-9eef-41fe-8511-b590d4920c63">
-<img align="center" alt="Quarkus" height="50" width="60" src="https://github.com/user-attachments/assets/bb3d760c-6dfe-4d56-94fe-cd5f0786df38">
+  <img align="center" alt="HTML" height="25" width="95" src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white">
+  <img align="center" alt="CSS" height="25" width="95" src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white">
+  <img align="center" alt="Angular" height="25" width="95" src="https://img.shields.io/badge/angular-%23DD0031.svg?style=for-the-badge&logo=angular&logoColor=white">
+ <img align="center" alt="Node.js" height="25" width="95" src="https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white">
+<img align="center" alt="Postgresql" height="25" width="95" src="https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white">
+<img align="center" alt="Quarkus" height="25" width="95" src="https://img.shields.io/badge/Quarkus-%23000000.svg?style=for-the-badge&logo=quarkus&logoColor=white">
+
+<img align="center" alt="Git" height="25" width="95" src="https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white">
+  <img align="center" alt="Docker" height="25" width="95" src="https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white">
+  <img align="center" alt="Intellij" height="25" width="95" src="https://img.shields.io/badge/IntelliJ-%23000000.svg?style=for-the-badge&logo=intellijidea&logoColor=white"">
+ <img align="center" alt="Java" height="25" width="95" src="https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white">
   
 </div>
 
